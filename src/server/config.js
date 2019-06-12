@@ -3,6 +3,8 @@ const morgan = require('morgan');
 const methodOverride = require('method-override');
 const Handlr = require('miller-handler');
 const cors = require('cors');
+//-----------------------------------------
+
 //NameSpace = api
 api = {}
 
@@ -25,6 +27,9 @@ module.exports = async (app) => {
     //Load all files inside src/api/controllers into api.controllers namespace
     api.controllers = require('./loaders').loadControllers
 
+    //CORS is a node.js package for providing a Connect/Express middleware that 
+    //can be used to enable CORS with various options.
+    //docs available in https://www.npmjs.com/package/cors
     app.use(cors({
         origin: "*",
         methods: "GET,HEAD,PUT,PATCH,POST,DELETE",

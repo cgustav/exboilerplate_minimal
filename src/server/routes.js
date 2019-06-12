@@ -1,6 +1,9 @@
 const router = require('express').Router();
 //-----------------------------------------
-const {Home} = api.controllers;
+const {
+    Home,
+    Example
+} = api.controllers;
 //-----------------------------------------
 
 /*******************************************************/

@@ -1,0 +1,33 @@
+# Miscellaneous
+*~
+*#
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.buildlog/
+.history
+.svn/
+.tmp
+
+# Visual Studio Code related
+.vscode/
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# Node related
+node_modules
+.node_history
+
+# Other 
+npm-debug.log
+*.seed
+*.log
+*.out
+*.pid

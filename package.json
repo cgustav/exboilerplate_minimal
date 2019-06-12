@@ -1,0 +1,35 @@
+{
+  "name": "exboilerplate-minimal",
+  "version": "0.3.4",
+  "description": "express-based service boilerplate",
+  "main": "app.js",
+  "scripts": {
+    "nlocal": "cross-env NODE_ENV=local nodemon app.js",
+    "ndev": "cross-env NODE_ENV=dev nodemon app.js",
+    "nprod": "cross-env NODE_ENV=prod nodemon app.js",
+    "local": "cross-env NODE_ENV=local app.js",
+    "dev": "cross-env NODE_ENV=dev app.js",
+    "prod": "cross-env NODE_ENV=prod app.js"
+  },
+  "keywords": [
+    "boilerplate",
+    "express",
+    "namespace",
+    "service",
+    "microservice"
+  ],
+  "author": "Eduardo Muñoz",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "method-override": "^3.0.0",
+    "miller-handler": "^0.7.0"
+  },
+  "devDependencies": {
+    "cross-env": "^5.2.0",
+    "morgan": "^1.9.1",
+    "nodemon": "^1.19.1"
+  }
+}
